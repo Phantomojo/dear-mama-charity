@@ -1,0 +1,49 @@
+.why-we-love-mum {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #5a3e1b;
+}
+
+.why-we-love-mum h2 {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #b07d62;
+  text-align: center;
+}
+
+.quotes-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.quote-item {
+  background-color: #fff1e6;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  color: #b07d62;
+  font-style: italic;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(176, 125, 98, 0.3);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.quote-item:hover,
+.quote-item:focus {
+  background-color: #b07d62;
+  color: #fff8f0;
+  outline: none;
+}
+
+.quote-item.revealed {
+  background-color: #d4a373;
+  color: #fff8f0;
+  font-weight: bold;
+}

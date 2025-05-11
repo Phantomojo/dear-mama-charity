@@ -1,0 +1,151 @@
+.music-for-mama {
+  padding: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #e0c3fc;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(118, 75, 162, 0.7);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+.music-for-mama h2 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 10px #fff;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.music-label {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #d1c4e9;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #b07d62, 0 0 30px #b07d62, 0 0 40px #b07d62;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #b07d62, 0 0 40px #b07d62, 0 0 50px #b07d62;
+  }
+}
+
+.music-player-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.music-player {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 0 15px rgba(176, 125, 98, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.song-title-input,
+.song-src-input {
+  flex: 1 1 200px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+.song-title-input::placeholder,
+.song-src-input::placeholder {
+  color: #d1c4e9;
+}
+
+.song-title-input:focus,
+.song-src-input:focus {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+audio {
+  flex: 1 1 250px;
+  outline: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #b07d62;
+}
+
+.remove-button {
+  background-color: #b07d62;
+  border: none;
+  color: #fff8f0;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.remove-button:hover,
+.remove-button:focus {
+  background-color: #6b4c3b;
+  outline: none;
+}
+
+.add-song-form {
+  display: flex;
+  gap: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.new-song-title,
+.new-song-src {
+  flex: 1 1 200px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+.new-song-title::placeholder,
+.new-song-src::placeholder {
+  color: #d1c4e9;
+}
+
+.new-song-title:focus,
+.new-song-src:focus {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.add-button {
+  background-color: #b07d62;
+  border: none;
+  color: #fff8f0;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover,
+.add-button:focus {
+  background-color: #6b4c3b;
+  outline: none;
+}
